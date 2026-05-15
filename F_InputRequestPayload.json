@@ -1,0 +1,20 @@
+{
+  "id": "{{id}}",
+  "desigation": "SSTL",
+  "firstname": "DCC",
+  "Address": [
+    {
+      "Sector": "2312",
+      "Landmark": "Near sector 234",
+      "houseNo": "291812",
+      "type": "Primary Address"
+    },
+    {
+      "Sector": "231234",
+      "Landmark": "Near sector 23456",
+      "houseNo": "29181234",
+      "type": "Secondary Address"
+    }
+  ],
+  "lastname": "Channa12"
+}
