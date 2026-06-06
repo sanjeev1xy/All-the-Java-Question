@@ -2,18 +2,18 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
-    <listener class-name="Danger0.L2_MyListener"/>
+    <listener class-name="listner_and_reports.L3_Extent_Report_Manager_Listener"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Danger0.L1_Listener">
+      <class name="listner_and_reports.L1_Listener">
         <methods>
           <include name="setup"/>
-          <include name="tearDown"/>
           <include name="testHomePageTitle"/>
           <include name="testAppUrl"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- Danger0.L1_Listener -->
+      </class> <!-- listner_and_reports.L1_Listener -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
