@@ -9,6 +9,9 @@ public class Reverse_Alternate_Words
 		//I/P=My name is Sanjeev Kumar Thakur
 		//O/P=My eman is veejnaS Kumar rukahT
 		
+		//I/P:My name is Roll NUmber 1388
+		//O/P:My eman is lloR NUmber 8831 
+		
 		System.out.println("Plz Enter the String");
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();

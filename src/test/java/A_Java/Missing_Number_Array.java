@@ -8,8 +8,10 @@ public static void main(String[] args)
 //Array no need to be sorted order
 //value should be in the range
 	
-	//int [] intarr= {1,2,4,5};
+	
 	int [] intarr= {5,7,8,6,4,2};
+	
+	//int [] intarr= {1,2,4,5};
 	//logic
 	//1+2+4+5=12 sum1
 	//1+2+3+4+5=15  sum2

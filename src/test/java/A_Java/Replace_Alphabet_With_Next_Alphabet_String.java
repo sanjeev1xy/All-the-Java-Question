@@ -9,6 +9,9 @@ public static void main(String[] args)
 	//I/P:Ab bc EF
 	//O/P:Bc cd FG
 	
+	//I/P:AbCDEfgh
+	//O/P:BcDEFghi
+	
 System.out.println("Plz Enter the String");
 Scanner sc=new Scanner(System.in);
 String s=sc.nextLine();

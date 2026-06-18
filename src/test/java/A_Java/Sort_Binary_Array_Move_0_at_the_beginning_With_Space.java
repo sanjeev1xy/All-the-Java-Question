@@ -1,6 +1,6 @@
 package A_Java;
 
-public class Sort_Binary_Array_Move_All_0_From_beginning 
+public class Sort_Binary_Array_Move_0_at_the_beginning_With_Space 
 {
 	//I/P=0 0 0 0 0 2 4 5 1 6 3 
 	//O/P=0 0 0 0 0 2 4 5 1 6 3 

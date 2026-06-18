@@ -4,13 +4,12 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class String_s_aabbcc_output_a2b2c2
+public class String_input_aabbcc_output_a2b2c2
 {
 public static void main(String[] args) 
 {
 	//I/P=aabbcc
 	//O/P=a2b2c2
-	
 	
 System.out.println("Plz.Enter a value ");
 Scanner sc=new Scanner(System.in);

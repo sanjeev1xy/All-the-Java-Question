@@ -2,7 +2,7 @@ package A_Java;
 
 import java.util.Scanner;
 
-public class String_Assign_3
+public class Count_Occurrence_of_Specific_Word_in_String
 {
 //I/P=My name is Sanjeev My
 //O/P=occurence of word of My

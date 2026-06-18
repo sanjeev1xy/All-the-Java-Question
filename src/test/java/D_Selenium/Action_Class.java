@@ -19,12 +19,10 @@ public static void main(String[] args) throws InterruptedException
 	driver.manage().window().maximize();
     //System.setProperty("webdriver.chrome.driver", "C:\\Users\\sanje\\eclipse-workspace\\Danger\\chromedriver-win64\\chromedriver.exe");
 
-//The Actions class in Selenium is used to perform advanced 
-//user interactions
+    //The Actions class in Selenium is used to perform advanced user interactions
+	//that cannot be done with normal click() or sendKeys().
 	
-//that cannot be done with normal click() or sendKeys().
-	
-//It is mainly used for:-
+    //It is mainly used for:-
 	         //1.Mouse Hover(Move to Element)
 			//2.Send keys
 			//3.Drag and Drop

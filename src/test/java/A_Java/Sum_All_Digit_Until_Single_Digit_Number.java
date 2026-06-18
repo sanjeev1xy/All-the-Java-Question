@@ -9,6 +9,9 @@ public static void main(String[] args)
 	//I/P=1234
 	//O/P=10
 	
+	//I/P=12345-1-3
+	//O/P=11
+	
 System.out.println("Plz Enter a number");
 Scanner sc=new Scanner(System.in);
 int n=sc.nextInt();

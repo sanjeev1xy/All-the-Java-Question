@@ -6,6 +6,9 @@ public class Traverse_String_Word_By_Word
 {
 public static void main(String[] args) 
 {
+	//I/P:My name is Sanjeev
+	//O/P:MynameisSanjeev
+	
 	System.out.println("Plz Enter the Number");
 	Scanner sc=new Scanner(System.in);
     String s=sc.nextLine();

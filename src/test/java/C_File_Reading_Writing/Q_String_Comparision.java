@@ -2,7 +2,7 @@ package C_File_Reading_Writing;
 
 public class Q_String_Comparision 
 {
-//==it will compare the address
+    //==it will compare the address
 	//.equals it will compare the content
 	//compare to it will compare the asciivalue
 	
@@ -21,6 +21,7 @@ public class Q_String_Comparision
 		{
 			System.out.println("Address is not same");
 		}
+		//O/P=Address is same
 		
 		// using == comparison new keyword	
 		
@@ -35,6 +36,7 @@ public class Q_String_Comparision
 		{
 			System.out.println("Address is not same....");
 		}
+		//O/P=Address is not same....
 		
 		// using .equals comparison new keyword
 		
@@ -49,6 +51,7 @@ public class Q_String_Comparision
 		{
 			System.out.println("Address is not same");
 		}
+		//O/P=Address is same..
 		
 		//using .equals comparison new keyword
 		
@@ -63,11 +66,14 @@ public class Q_String_Comparision
 		{
 			System.out.println("Address is not same..........");
 		}
+		//O/P=Address is not same..........
+	
 		
 		//compare to
 		String s9="sanjeev";
 		String s10=new String("sanjeev");
 		System.out.println(s.compareTo(s10)); //Ascii value is different compare to ascii chart
+		//O/P=-32
 		
 		
 }

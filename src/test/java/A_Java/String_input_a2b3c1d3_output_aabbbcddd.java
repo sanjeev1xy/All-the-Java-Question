@@ -2,7 +2,7 @@ package A_Java;
 
 import java.util.Scanner;
 
-public class String_S_a2b3c1d3_output_aabbbcddd 
+public class String_input_a2b3c1d3_output_aabbbcddd 
 {
 public static void main(String[] args) 
 {

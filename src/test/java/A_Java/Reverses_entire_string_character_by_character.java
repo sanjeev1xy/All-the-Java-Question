@@ -2,15 +2,18 @@ package A_Java;
 
 import java.util.Scanner;
 
-public class Reverse_a_String_Sentence 
+public class Reverses_entire_string_character_by_character 
 {
 	public static void main(String[] args) 
 	{
+		//I/P:My name is Roll NUmber 1388
+		//O/P:8831 rebmUN lloR si eman yM
+
 		//I/P:My Name is Sanjeev
 		//O/P:veejnaS si emaN yM
 		
-		//I/P:MynameisSanjeev
-		//O/P:veejnaSsiemanyM
+		//I/P:MynameisRollNUmber1388
+		//O/P:8831rebmUNlloRsiemanyM
 		
 		//I/P:123456
 		//O/P:654321

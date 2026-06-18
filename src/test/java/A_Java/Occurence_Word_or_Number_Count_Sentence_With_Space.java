@@ -19,7 +19,7 @@ public static void main(String[] args)
 	System.out.println("Plz Enter a Sentence");
 	Scanner sc=new Scanner(System.in);
 	String s=sc.nextLine();
-    String[] s1 = s.split(" ");
+    String[] s1 = s.split("\\s+"); //Split the sentence into words using space as separator
     HashMap<String, Integer> mp = new HashMap<>(); 
     for (String word:s1)
     {

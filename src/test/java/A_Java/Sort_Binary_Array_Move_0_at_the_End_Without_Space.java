@@ -1,17 +1,16 @@
 package A_Java;
 
-public class String_Assign_7 
+public class Sort_Binary_Array_Move_0_at_the_End_Without_Space 
 {
-	//I/P=1010101
-	//O/P=0001111
+//I/P=1010101
+//O/P=1111000
 	
 	public static void sort_binary(int a[], int n)
     {
         int j = -1;
-        // Change: Push all 0s to the left
         for (int i = 0; i < n; i++)
         {
-            if (a[i] <1)
+            if (a[i]!=0)
             {
                 j++;
                 int t = a[j];
@@ -21,7 +20,7 @@ public class String_Assign_7
         }
     }
 
-    public static void main(String[] args) 
+    public static void main(String[] args)
     {
     	int []a= {1,0,1,0,1,0,1};
 		int n=a.length;
@@ -31,5 +30,4 @@ public class String_Assign_7
 			System.out.print(a[i]);
 		}
     }
-	
 }

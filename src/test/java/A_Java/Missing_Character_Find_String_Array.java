@@ -4,6 +4,7 @@ public class Missing_Character_Find_String_Array
 {
 public static void main(String[] args) 
 {
+	//String [] s={"abcdefhij"};
 	String [] s= {"abc","def","hij"};
     // First string = abcdefhij (missing g)
     int sum1 = 0;
