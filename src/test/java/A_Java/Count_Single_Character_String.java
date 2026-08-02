@@ -4,6 +4,8 @@ public class Count_Single_Character_String
 {
 public static void main(String[] args) 
 {
+	//Occurence of a 2
+	
 String s="my name is sanjeev";
 int Total_Length=s.length();
 int Total_Length_Remove=s.replace("a", "").length();

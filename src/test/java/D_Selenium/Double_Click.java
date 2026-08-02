@@ -20,8 +20,8 @@ public static void main(String[] args) throws InterruptedException
 
 	
 	driver.get("https://omayo.blogspot.com/");
-	WebElement blogsmenu=driver.findElement(By.id("blogsmenu"));
 	Actions ac=new Actions(driver);
+	WebElement blogsmenu=driver.findElement(By.id("blogsmenu"));
 	//ac.moveToElement(blogsmenu).perform();
 	ac.doubleClick(blogsmenu).perform();
 	System.out.println("Double Click is successful");

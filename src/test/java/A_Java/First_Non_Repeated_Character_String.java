@@ -16,6 +16,7 @@ public class First_Non_Repeated_Character_String
     	
     	String s = "Selenium Testing";
         String s1 = s.toLowerCase(); // Convert string to lowercase
+        //String s1 = s.toUpperCase(); // Convert string to uppercase
 
          HashMap<Character, Integer> mp = new HashMap<>();
          for (char c : s1.toCharArray())

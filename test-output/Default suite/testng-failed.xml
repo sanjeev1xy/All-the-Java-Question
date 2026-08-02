@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Data_Driven_Testing.Data_Provider_Annotation_Demo">
+      <class name="A_Java.Kumar">
         <methods>
-          <include name="setup"/>
-          <include name="teardown"/>
-          <include name="testLogin" invocation-numbers="0 1"/>
+          <include name="launchthebrowser"/>
         </methods>
-      </class> <!-- Data_Driven_Testing.Data_Provider_Annotation_Demo -->
+      </class> <!-- A_Java.Kumar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

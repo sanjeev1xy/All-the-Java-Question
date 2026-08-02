@@ -26,9 +26,9 @@ public class Count_of_Vowel_Letter
         HashMap<Character, Integer> mp = new HashMap<Character, Integer>();
         for (String word : s) 
         {
-            word = word.toLowerCase(); // handle upper case letters
-         // word = word.toUpperCase(); // Handle lower case letters
-            for (char ch : word.toCharArray()) 
+           String words = word.toLowerCase(); // handle upper case letters
+         // String words = word.toUpperCase(); // Handle lower case letters
+            for (char ch : words.toCharArray()) 
             {
                 if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
              // if (ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')  // for Upper Case

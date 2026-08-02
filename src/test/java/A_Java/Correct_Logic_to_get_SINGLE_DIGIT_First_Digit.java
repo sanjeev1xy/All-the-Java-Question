@@ -6,18 +6,17 @@ public class Correct_Logic_to_get_SINGLE_DIGIT_First_Digit
 {
 public static void main(String[] args) 
 {
-	//I/P=4513
-	//O/P=4
+	// I/P = 4513
+    // First Digit = 4
+    // Last Digit = 3
 	
-	System.out.println("Plz.Enter a value ");
-    Scanner sc = new Scanner(System.in);
-    int n = sc.nextInt();
+	int n=4513;
 
-    while (n > 9)   // keep removing last digits
+    while (n > 9)   
     {
-        n = n / 10;
+        n=n/10;   //I want first digit 
+        //n=n%10;   // I want last digit
     }
-
-    System.out.println(n);	
+    System.out.println(n);
 }
 }

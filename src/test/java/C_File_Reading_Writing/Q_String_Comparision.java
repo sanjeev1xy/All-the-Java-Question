@@ -22,7 +22,7 @@ public class Q_String_Comparision
 			System.out.println("Address is not same");
 		}
 		//O/P=Address is same
-		
+//------------------------------------------------------------------------------		
 		// using == comparison new keyword	
 		
 		String s2=new String("Sanjeev"); //Heap,Every time make a object
@@ -37,11 +37,11 @@ public class Q_String_Comparision
 			System.out.println("Address is not same....");
 		}
 		//O/P=Address is not same....
-		
+//------------------------------------------------------------------------------
 		// using .equals comparison new keyword
 		
 		String s4="Sanjeev"; //SCP
-		String s5="Sanjeev";//SCP
+		String s5=new String("Sanjeev"); //Heap,Every time make a object
 		
 		if(s4==s5)
 		{
@@ -51,14 +51,27 @@ public class Q_String_Comparision
 		{
 			System.out.println("Address is not same");
 		}
-		//O/P=Address is same..
-		
-		//using .equals comparison new keyword
-		
-		String s6=new String("Sanjeev"); //Heap,Every time make a object
-		String s7=new String("Sanjeev"); //Heap,Every time make a object
+		//O/P=Address is not same
+//------------------------------------------------------------------------------		
+		String s6="kumar"; //SCP
+		String s7=new String("thakur"); //Heap,Every time make a object
 		
 		if(s6==s7)
+		{
+			System.out.println("Address is same..");
+		}
+		else
+		{
+			System.out.println("Address is not same");
+		}
+		//O/P=Address is not same
+//------------------------------------------------------------------------------		
+		//using .equals comparison new keyword
+		
+		String s8=new String("Sanjeev"); //Heap,Every time make a object
+		String s9=new String("Sanjeev"); //Heap,Every time make a object
+		
+		if(s8==s9)
 		{
 			System.out.println("Address is same............");
 		}
@@ -68,11 +81,11 @@ public class Q_String_Comparision
 		}
 		//O/P=Address is not same..........
 	
-		
+//------------------------------------------------------------------------------		
 		//compare to
-		String s9="sanjeev";
-		String s10=new String("sanjeev");
-		System.out.println(s.compareTo(s10)); //Ascii value is different compare to ascii chart
+		String s10="sanjeev";
+		String s11=new String("sanjeev");
+		System.out.println(s.compareTo(s11)); //Ascii value is different compare to ascii chart
 		//O/P=-32
 		
 		

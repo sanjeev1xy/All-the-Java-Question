@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Count_Occurrence_of_Specific_Word_in_String
 {
 //I/P=My name is Sanjeev My
-//O/P=occurence of word of My
+//O/P=occurence of word of My : 2
 	
 	public static void main(String[] args) 
 	{
@@ -22,6 +22,6 @@ public class Count_Occurrence_of_Specific_Word_in_String
 				count++;
 			}
 		}
-		System.out.println(count);
+		System.out.println("occurence of word of My : "+count);
 	}
 }

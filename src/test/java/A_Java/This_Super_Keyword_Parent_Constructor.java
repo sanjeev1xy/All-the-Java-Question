@@ -16,6 +16,11 @@ super() → Parent Class
 or
 this()  = Internal Constructor Call
 super() = External (Parent) Constructor Call
+or
+this()  → Calls another constructor of the same class 
+          (Internal Constructor Call)
+super() → Calls a constructor of the immediate parent class 
+          (External Constructor Call)
 
 Note:-
 ------	

@@ -9,9 +9,9 @@ import org.testng.annotations.BeforeClass;
 public class K_J_Unit__Annotation 
 {
 //@BeforeClass
-//@Before
+//@BeforeTest
 //@Test
-//@After
+//@AfterTest
 //AfterClass
 	
 //@Ignore it is used to ignore a few test statements during 

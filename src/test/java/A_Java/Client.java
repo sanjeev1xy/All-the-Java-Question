@@ -1,4 +1,4 @@
-package A_Java;
+ package A_Java;
 
 import java.util.Scanner;
 
@@ -7,7 +7,7 @@ public interface Client
 void input(); //public + Abstract
 void output(); //public + Abstract
 
-class Raju implements Client
+public class Raju implements Client
 {
 	String name;
 	double sal;
@@ -15,10 +15,10 @@ class Raju implements Client
 	{
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter username: ");
-		name=sc.nextLine();
+		String name=sc.nextLine();
 		
 		System.out.println("Enter salary:  ");
-		sal=sc.nextDouble();
+		double sal=sc.nextDouble();
 	}
 	public void output()
 	{

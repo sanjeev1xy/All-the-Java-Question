@@ -11,56 +11,84 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class L1_Data_Provider_Annotation_Demo 
+public class L1_Data_Provider_Annotation_Demo
 {
 	WebDriver driver;
-	
+
 	@BeforeClass
 	public void setup()
 	{
-		driver=new ChromeDriver();
+		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		
+		driver.manage().window().maximize();
 	}
-	
-	@Test(dataProvider="dp")
-	public void testLogin(String email,String pwd) throws InterruptedException
+
+	@Test(dataProvider = "dp")
+	public void testLogin(String email, String pwd, String exp) throws InterruptedException
 	{
 		driver.get("https://tutorialsninja.com/demo/index.php?route=account/login");
-		driver.manage().window().maximize();
-		driver.findElement(By.xpath("//input[@id='input-email']")).sendKeys(email);
-		driver.findElement(By.xpath("//input[@id='input-password']")).sendKeys(pwd);
-		driver.findElement(By.xpath("//input[@value='Login']")).click(); 
+
+		driver.findElement(By.id("input-email")).clear();
+		driver.findElement(By.id("input-email")).sendKeys(email);
+
+		driver.findElement(By.id("input-password")).clear();
+		driver.findElement(By.id("input-password")).sendKeys(pwd);
+
+		driver.findElement(By.xpath("//input[@value='Login']")).click();
+
 		Thread.sleep(2000);
-		boolean status=driver.findElement(By.xpath("//h2[normalize-space()='My Account']")).isDisplayed();
-		if(status==true)
+
+		boolean status = driver.findElements(By.xpath("//h2[normalize-space()='My Account']")).size() > 0;
+
+		// Valid Login
+		if(exp.equalsIgnoreCase("Valid"))
 		{
-			driver.findElement(By.xpath("//a[@class='list-group-item'][normalize-space()='Logout']")).click();
-			Assert.assertTrue(true);
-	    }
+			if(status)
+			{
+				driver.findElement(By.xpath("//a[@class='list-group-item'][normalize-space()='Logout']")).click();
+				Assert.assertTrue(true);
+			}
+			else
+			{
+				Assert.fail("Valid Login Failed");
+			}
+		}
+
+		// Invalid Login
 		else
 		{
-			Assert.fail();
+			if(status)
+			{
+				driver.findElement(By.xpath("//a[@class='list-group-item'][normalize-space()='Logout']")).click();
+				Assert.fail("Invalid Login Passed");
+			}
+			else
+			{
+				Assert.assertTrue(true);
+			}
 		}
 	}
-	
+
 	@AfterClass
 	public void teardown()
 	{
-		driver.close();
-	}
-	
-	@DataProvider(name="dp",indices= {0,1})
-	public Object[][] loginData()
-	{
-		Object data[][]= {
-				             {"abc@gmail.com","test123"},
-				             {"xyz@gmail.com","test012"},
-				             {"john@gmail.com","test@123"},
-				             {"sanjeev86994156@gmail.com","SANgita@123"},
-				             {"johncanedy@gmail.com","test"},
-		};
-		return data;
+		driver.quit();
 	}
 
+	@DataProvider(name = "dp" , indices={0,1,2,3,4})
+	public Object[][] loginData()
+	{
+		Object data[][] =
+		{
+			{"abc@gmail.com", "test123", "Invalid"},
+			{"xyz@gmail.com", "test012", "Invalid"},
+			{"john@gmail.com", "test@123", "Invalid"},
+			{"sanjeev86994156@gmail.com", "SANgita@123", "Valid"},
+			{"johncanedy@gmail.com", "test", "Invalid"}
+		};
+
+		return data;
+	}
 }
+
+

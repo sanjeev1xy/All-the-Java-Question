@@ -13,21 +13,21 @@ System.out.println("Output: "+output);
 }
 public static String transformString(String s)
 {
-	Map<Character,Character>charMap=new HashMap<>();
+	HashMap<Character,Character>mp=new HashMap<>();
 	
 	//Define the transformation rules
-	charMap.put('s', 'l');
-	charMap.put('i', 'i');
-	charMap.put('l', 'e');
-	charMap.put('e', 'n');
-	charMap.put('n', 't');
-	charMap.put('t', 's');
+	mp.put('s', 'l');
+	mp.put('i', 'i');
+	mp.put('l', 'e');
+	mp.put('e', 'n');
+	mp.put('n', 't');
+	mp.put('t', 's');
 	
 	//Build the transformed String
 	StringBuilder transformed=new StringBuilder();
 	for(char c:s.toCharArray())
 	{
-		transformed.append(charMap.getOrDefault(c, c));
+		transformed.append(mp.getOrDefault(c, c));
 	}
 	return transformed.toString();
 }
