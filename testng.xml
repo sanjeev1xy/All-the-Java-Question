@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="C_File_Reading_Writing.K_J_Unit__Annotation"/>
+      <class name="D1_Data_Driven_Testing.L2_Data_driven_Framework"/>
+      <class name="D_Selenium.All_Assertions_Including_Hard_and_Soft_Assertion"/>
+      <class name="D2_listner_and_reports.L1_Listener"/>
+      <class name="D1_Data_Driven_Testing.L1_Data_Provider_Annotation_Demo"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

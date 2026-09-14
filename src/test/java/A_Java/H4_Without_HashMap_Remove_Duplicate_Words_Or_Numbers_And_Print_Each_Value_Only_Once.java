@@ -12,6 +12,8 @@ public class H4_Without_HashMap_Remove_Duplicate_Words_Or_Numbers_And_Print_Each
     	//I/P:-1 2 3 4 5 6 7 8 9 1 2 3 4
     	//O/P:-1 2 3 4 5 6 7 8 9 
 
+    	//I/P:-a b 1 2 3 a 2 b 3
+    	//O/P:-a b 1 2 3
     	
     	System.out.println("Please Enter the Value");
         Scanner sc=new Scanner(System.in);

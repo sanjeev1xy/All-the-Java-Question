@@ -13,6 +13,9 @@ public class H3_Without_HashMap_Print_Only_Non_Repeated_Words_Or_Numbers_With_Sp
     	//I/P:-1 2 3 4 5 6 7 8 9 1 2 3 4
     	//O/P:-5 6 7 8 9 
     	
+    	//I/P:-a b 1 2 3 a 2 b 3
+    	//O/P:-1 
+    	
     	System.out.println("Please Enter the value ");
         Scanner sc=new Scanner(System.in);
         String s=sc.nextLine();

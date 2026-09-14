@@ -15,6 +15,9 @@ public static void main(String[] args)
 	
 	//I/P:123445123
 	//O/P:{123445123=1}
+	
+	//I/P:a b 1 2 3 a 2 b 3
+	//O/P:{a=2, 1=1, b=2, 2=2, 3=2}
 
 	System.out.println("Plz Enter a Sentence");
 	Scanner sc=new Scanner(System.in);

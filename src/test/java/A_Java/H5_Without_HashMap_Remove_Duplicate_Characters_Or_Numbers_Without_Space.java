@@ -11,8 +11,10 @@ public class H5_Without_HashMap_Remove_Duplicate_Characters_Or_Numbers_Without_S
     		
     	//I/P:SanjeevSanjeevkumar
     	//O/P:Sanjevkumr
-    		
     	
+    	//I/P:ab123a2b3
+    	//O/P:ab123
+    		
     	 System.out.println("Please ENter the Value");
          Scanner sc=new Scanner(System.in);
          String s=sc.nextLine();

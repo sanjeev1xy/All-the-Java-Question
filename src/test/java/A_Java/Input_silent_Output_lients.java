@@ -13,7 +13,7 @@ System.out.println("Output: "+output);
 }
 public static String transformString(String s)
 {
-	HashMap<Character,Character>mp=new HashMap<>();
+	HashMap<Character,Character>mp=new HashMap<Character,Character>();
 	
 	//Define the transformation rules
 	mp.put('s', 'l');

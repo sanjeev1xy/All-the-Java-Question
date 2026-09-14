@@ -41,17 +41,17 @@ public class Q_String_Comparision
 		// using .equals comparison new keyword
 		
 		String s4="Sanjeev"; //SCP
-		String s5=new String("Sanjeev"); //Heap,Every time make a object
-		
-		if(s4==s5)
+		String s5=new String("Sanjeev"); //Heap
+
+		if(s4.equals(s5))
 		{
-			System.out.println("Address is same..");
+		    System.out.println("Content is same");
 		}
 		else
 		{
-			System.out.println("Address is not same");
+		    System.out.println("Content is not same");
 		}
-		//O/P=Address is not same
+		//O/P = Content is same   → because .equals() checks content, not address
 //------------------------------------------------------------------------------		
 		String s6="kumar"; //SCP
 		String s7=new String("thakur"); //Heap,Every time make a object
@@ -70,16 +70,17 @@ public class Q_String_Comparision
 		
 		String s8=new String("Sanjeev"); //Heap,Every time make a object
 		String s9=new String("Sanjeev"); //Heap,Every time make a object
-		
-		if(s8==s9)
+
+		if(s8.equals(s9))
 		{
-			System.out.println("Address is same............");
+			System.out.println("Content is same............");
 		}
 		else
 		{
-			System.out.println("Address is not same..........");
+			System.out.println("Content is not same..........");
 		}
-		//O/P=Address is not same..........
+		//O/P = Content is same............
+		
 	
 //------------------------------------------------------------------------------		
 		//compare to

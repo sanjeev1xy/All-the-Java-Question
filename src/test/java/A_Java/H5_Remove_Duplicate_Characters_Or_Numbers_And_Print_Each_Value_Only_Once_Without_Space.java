@@ -13,6 +13,9 @@ public static void main(String[] args)
 		//I/P:SanjeevSanjeevkumar
 		//O/P:Sanjevkumr
 	
+	    //I/P:ab123a2b3
+	    //O/P:ab123
+	
 	System.out.println("Plz Enter Numbers:");
     Scanner sc = new Scanner(System.in);
     String s = sc.nextLine(); 

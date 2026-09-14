@@ -17,6 +17,12 @@ public static void main(String[] args)
 	//O/P:1 → 2
 	//O/P:2 → 2
 	//O/P:3 → 2
+	
+	//I/P:a b 1 2 3 a 2 b 3
+	//O/P:a → 2
+	//O/P:b → 2
+	//O/P:2 → 2
+	//O/P:3 → 2
 
 	System.out.println("Plz Enter a Sentence");
 	Scanner sc=new Scanner(System.in);

@@ -1,5 +1,37 @@
 package D2_listner_and_reports;
+/*
+Listener: Used in TestNG to monitor test execution events like 
+start, pass, fail, skip, and finish.
 
+Main annotation:
+----------------
+@Listeners(MyListener.class)
+
+Common Listener methods:
+------------------------
+onStart()
+onTestStart()
+onTestSuccess()
+onTestFailure()
+onTestSkipped()
+onFinish()
+
+Example
+-------
+@Listeners(MyListener.class)
+public class LoginTest 
+{
+    @Test
+    public void loginTest() 
+    {
+        System.out.println("Login Test");
+    }
+}
+
+In short: Listener helps us automatically perform actions, such as 
+taking a screenshot when a test fails.
+
+ */
 import java.time.Duration;
 
 import org.openqa.selenium.By;

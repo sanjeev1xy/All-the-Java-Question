@@ -17,7 +17,7 @@ public class Count_Occurrence_of_Specific_Word_in_String
 		int count=0;
 		for(int i=0;i<s1.length;i++)
 		{
-			if(word.equals(s1[i]))
+			if(s1[i].equals(word))
 			{
 				count++;
 			}

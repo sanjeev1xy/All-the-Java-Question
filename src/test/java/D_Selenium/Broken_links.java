@@ -25,7 +25,7 @@ public static void main(String[] args)
 	driver.get("https://www.amazon.in/");
 	List<WebElement>links=driver.findElements(By.tagName("a")); //multiple broken link available with a tag on the amazon
 	System.out.println("no of links are "+links.size());
-	List<String>urllist=new ArrayList<String>();
+	ArrayList<String>urllist=new ArrayList<String>();
 	for(WebElement e:links)
 	{
 		String url=e.getAttribute("href"); //href mostly attribute overthere on the amazon

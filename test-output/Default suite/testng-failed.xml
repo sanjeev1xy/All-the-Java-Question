@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="A_Java.Kumar">
+      <class name="D_Selenium.All_Assertions_Including_Hard_and_Soft_Assertion">
         <methods>
-          <include name="launchthebrowser"/>
+          <include name="tearDown"/>
+          <include name="verifyAssertions"/>
         </methods>
-      </class> <!-- A_Java.Kumar -->
+      </class> <!-- D_Selenium.All_Assertions_Including_Hard_and_Soft_Assertion -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -10,7 +10,7 @@ try
 	improperMethod();
 	System.out.println("B");
 }
-catch(Throwable e)
+catch(Exception e)
 {
 	System.out.println("C");
 }
@@ -21,6 +21,6 @@ finally
 }
 public static void improperMethod()
 {
-	throw new Error();
+	
 }
 }

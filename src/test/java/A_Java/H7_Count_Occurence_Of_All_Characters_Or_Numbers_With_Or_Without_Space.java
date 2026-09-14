@@ -18,6 +18,12 @@ public static void main(String[] args)
 		
 //1 2 3 4 5 6 7 8  9 8 7 6 5 4 3
 //{ =15, 1=1, 2=1, 3=2, 4=2, 5=2, 6=2, 7=2, 8=2, 9=1}
+	
+//ab123a2b3
+//{a=2, 1=1, b=2, 2=2, 3=2}
+	
+//a b 1 2 3 a 2 b 3
+//{ =8, a=2, 1=1, b=2, 2=2, 3=2}	
 	                  
 	System.out.println("Plz Enter a Sentence");
 	Scanner sc=new Scanner(System.in);

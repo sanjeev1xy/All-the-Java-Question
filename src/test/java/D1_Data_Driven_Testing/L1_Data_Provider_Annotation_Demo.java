@@ -1,4 +1,34 @@
 package D1_Data_Driven_Testing;
+/*
+Purpose: Run the same test with different sets of data.
+Data Source: Excel, CSV, JSON, Database, etc.
+Benefit: Reduces duplicate test code.
+Common Annotation: @DataProvider in TestNG.
+
+Example
+-------
+@DataProvider(name = "loginData")
+public Object[][] loginData() 
+{
+    return new Object[][] 
+    {
+        {"user1", "pass1"},
+        {"user2", "pass2"}
+    };
+}
+
+@Test(dataProvider = "loginData")
+public void loginTest(String username, String password) 
+{
+    driver.findElement(By.id("username")).sendKeys(username);
+    driver.findElement(By.id("password")).sendKeys(password);
+}
+
+In short: @DataProvider provides multiple data sets, 
+and @Test(dataProvider = "...") runs the same test with each data 
+set.
+
+ */
 
 import java.time.Duration;
 

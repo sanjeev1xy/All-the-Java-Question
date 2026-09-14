@@ -6,20 +6,31 @@ public class Sort_Sentence_Array
 {
     public static void main(String[] args)
     {
-        // With Array.sort()
-        /*String[] arr = {"apple", " ", "kiwi", "orange", "banana", "fig"};
+/* only for Arrays.sort(arr),
+Arrays.sort(arr, String.CASE_INSENSITIVE_ORDER) is 
+needed only when the array contains mixed uppercase 
+and lowercase letters and you want alphabetical 
+sorting; otherwise, normal Arrays.sort(arr) is 
+enough.*/
 
+        // With Array.sort()    	
+        //String[] arr = {"fig", " ", "kiwi", "orange", "banana", "apple"," "}; //Small Letter and spaces
+    	//String[] arr = {"Fig", " ", "Kiwi", "Orange", "Banana", "Apple"," "}; //Capital Letter and spaces
+    	String[] arr = {"Fig", " ", "Kiwi", "orange", "banana", "Apple"," "}; //Mixed letter(Small and Capital Letter) and spaces
         Arrays.sort(arr);
+        //Arrays.sort(arr, String.CASE_INSENSITIVE_ORDER); //for Sort alphabetically 
+                                                         // and Mixed letter(Small and Capital Letter) and spaces        
+         for (String s : arr)     // Read each element
+         {
+            //System.out.println("["+s+"],");
+            System.out.println(s+",");
+         }
 
-        for (String s : arr)
-        {
-            System.out.print(s + ",");
-        }*/
 
-
-        // Without Array.sort()
-        String[] arr = {"apple", " ", "kiwi", "orange", "banana", "fig"};
-        //String[] arr = {"apple", "kiwi", "orange", "banana", "fig"};
+/*      // Without Array.sort()
+    	//String[] arr = {"fig", " ", "kiwi", "orange", "banana", "apple"," "}; //Small Letter and spaces
+    	//String[] arr = {"Fig", " ", "Kiwi", "Orange", "Banana", "Apple"," "}; //Capital Letter and spaces
+    	String[] arr = {"Fig", " ", "Kiwi", "orange", "banana", "Apple"," "}; //Mixed letter(Small and Capital Letter) and spaces
 
         for (int i = 0; i < arr.length; i++)
         {
@@ -35,8 +46,8 @@ public class Sort_Sentence_Array
         }
         for (int i = 0; i < arr.length; i++)
         {
-            System.out.print("\"" + arr[i] + "\" "); // O/P: " " "apple" "banana" "fig" "kiwi" "orange" 
-            //System.out.print(arr[i] + " ");  // O/P:apple banana fig kiwi orange 
-        }
+           System.out.println("["+arr[i]+"],");
+           //System.out.println(arr[i]+",");
+        }*/
     }
 }

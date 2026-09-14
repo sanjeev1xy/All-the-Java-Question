@@ -19,47 +19,60 @@ import io.appium.java_client.service.local.AppiumServiceBuilder;
 
 public class Kumar_Mobile_Base 
 {
-	public AndroidDriver driver;
-	public AppiumDriverLocalService service;
-	@BeforeClass
-	public void configureappium() throws MalformedURLException, InterruptedException 
-	{
-        service=new AppiumServiceBuilder()
-				.withAppiumJS(new File("C:\\Users\\sanje\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js"))
-				.withIPAddress("127.0.0.1")
-				.usingPort(4723)
-				.build();
-		
-		service.start();
-		
-		UiAutomator2Options options=new UiAutomator2Options();
-		options.setDeviceName("emulator-5554");
-		options.setPlatformName("Android");
-		options.setAutomationName("uiautomator2");
-		options.setApp("C:\\Users\\sanje\\eclipse-workspace\\Thakur\\src\\test\\java\\resources\\ApiDemos-debug.apk");
-		options.setAutoGrantPermissions(true);
-		
-		driver=new AndroidDriver(new URL("http://127.0.0.1:4723"),options);
-		
-		System.out.println("Mobile app successfuly launch");
-	}
-	
-	public void scrollToEndAction() throws InterruptedException
-	{
-		boolean canScrollMore;
-		do
-		{
-			canScrollMore=(Boolean)((JavascriptExecutor)driver).executeScript("mobile: scrollGesture",ImmutableMap.of("left",100,"top",100,"width",100,"height",200,"direction","down","percent",3.0));
-		}
-		while(canScrollMore);
-		Thread.sleep(5000);
-	}
-	
-		@AfterClass
-		public void teardown()
-		{
-		driver.quit();
-		service.stop();
-		}
+	 private String firstname;
+     private String lastname;
+     private String rollnumber;
+     private String Class2;
+     private int DOB;
+     private int age;
 
+     public String getfirstname()
+     {
+       return firstname;
+     }
+     public void setfirstname(String firstname)
+     {
+       this.firstname=firstname;
+     }
+     public String getlastname()
+     {
+       return lastname;
+     }
+     public void setlastname(String lastname)
+     {
+       this.lastname=lastname;
+     }
+     public String getrollnumber()
+     {
+       return rollnumber;
+     }
+     public void setrollnumber(String rollnumber)
+     {
+       this.rollnumber=rollnumber;
+     }
+     public String getClass2()
+     {
+       return Class2;
+     }
+     public void setClass2(String Class2)
+     {
+       this.Class2=Class2;
+     }
+     public int getDOB()
+     {
+       return DOB;
+     }
+     public void setDOB(int DOB)
+     {
+       this.DOB=DOB;
+     }
+     public int getage()
+     {
+       return age;
+     }
+     public void setage(int age)
+     {
+       this.age=age;
+     }
+ 
 }

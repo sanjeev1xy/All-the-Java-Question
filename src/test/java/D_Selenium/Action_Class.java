@@ -26,7 +26,7 @@ public static void main(String[] args) throws InterruptedException
 	         //1.Mouse Hover(Move to Element)
 			//2.Send keys
 			//3.Drag and Drop
-			//4.Right Click(Context Click)
+			//4.Right Click(ContextClick)
 			//5.Double Click
 			//6.Click and Hold / Release
 			//7.Keyboard Actions(CTRL+A, CTRL+C, CTRL+V)

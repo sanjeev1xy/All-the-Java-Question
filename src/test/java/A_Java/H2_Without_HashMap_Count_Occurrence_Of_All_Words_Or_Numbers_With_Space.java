@@ -15,6 +15,14 @@ public class H2_Without_HashMap_Count_Occurrence_Of_All_Words_Or_Numbers_With_Sp
     	//I/P:123445123
     	//O/P:{123445123=1}
     	
+    	//I/P:a b 1 2 3 a 2 b 3
+    	//a = 2
+    	//b = 2
+    	//1 = 1
+    	//2 = 2
+    	//3 = 2
+    	
+    	
         System.out.println("Plz Enter a Sentence");
         Scanner sc=new Scanner(System.in);
         String s=sc.nextLine();

@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Scroll_Handle_Selenium 
+public class window_ScrollBy_Handle_Selenium 
 {
 public static void main(String[] args) throws InterruptedException 
 {
